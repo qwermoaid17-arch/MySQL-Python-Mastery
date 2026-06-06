@@ -54,4 +54,4 @@ except sql.Error as er:
 finally:
 
     if db:
-        db.close()
+        db.close() 
