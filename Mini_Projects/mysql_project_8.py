@@ -36,5 +36,6 @@ except sql.Error as er:
     print("Error ", er)
 
 finally:
-
-    db.close()
+    
+    if db:
+        db.close()
