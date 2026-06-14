@@ -41,14 +41,11 @@ try:
 
         cr.execute("SELECT * FROM timee WHERE date NOT BETWEEN date_SUB('2026-5-28', INTERVAL 10 DAY) AND '2026-5-28'")
 
+        for row in cr.fetchall():
 
+            print(row[0], row[1], row[2])
 
-
-
-
-
-
-
+        cr.execute("SELECT * FROM timee")
 
         for row in cr.fetchall():
 
