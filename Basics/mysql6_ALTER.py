@@ -14,10 +14,6 @@ try:
     cr.execute("CREATE DATABASE IF NOT EXISTS moayed")
     cr.execute("USE moayed")
 
-    cr.execute("CREATE TABLE IF NOT EXISTS students "
-    "(id INT AUTO_INCREMENT PRIMARY KEY, " \
-    " name VARCHAR(255), " \
-    "email VARCHAR(255))")
 
     o = cr.execute("SHOW TABLES LIKE 'y3'")
 

@@ -33,10 +33,10 @@ try:
 
         # cr.execute("SELECT * FROM timee WHERE date IN (%s, %s)", ('2026-5-22', '2024-6-10'))
 
-        cr.execute("SELECT * FROM timee WHERE REPLACE(date, '-', '/') IN (%s, %s)", ('2026-5-22', '2024-6-10'))
+        # cr.execute("SELECT * FROM timee WHERE REPLACE(date, '-', '/') IN (%s, %s)", ('2026-5-22', '2024-6-10'))
 
 
-        # cr.execute("SELECT * FROM timee WHERE date NOT IN (%s)", ('2026-5-22',))
+        cr.execute("SELECT * FROM timee WHERE date NOT IN (%s)", ('2026-5-22',))
 
 
 

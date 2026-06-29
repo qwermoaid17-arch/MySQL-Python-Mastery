@@ -60,7 +60,7 @@ try:
             print(row[0], row[1], row[2])
 
 
-    def UPDATE(cr):
+    def UPDATE_1(cr):
 
         cr.execute("UPDATE timee SET number = IF(number < 1 , + 10, number)")
 
@@ -80,7 +80,7 @@ try:
 
     SELECT(cr)
 
-    # UPDATE(cr)
+    # UPDATE_1(cr)
 
     # SHOW(cr) 
 
